@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>PS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="./index.css">
+        <script src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js">
+        </script>
+        <script src = "https://code.highcharts.com/highcharts.js"></script>
+    </head>
+    <body>
+        <header> &emsp;<span>Comments</span> &emsp;  <span>Vote Count</span>&emsp;&emsp;<span>Up Vote</span>&emsp; &emsp;<span>News Details</span></header>
+        <table class="drawTable" cellSpacing="0" cellPadding="0" ></table>
+        <a aria-label="More items" class="previousPage">Previous  |</a><a aria-label="More items" class="nextPage">Next </a>
+        <hr />
+        <div id = "highchart" style = "width: 100%; height: 400px; margin: 0 auto"></div>
+        <script type="text/javascript" src="./timeConverter.js"></script>
+        <script type="text/javascript" src="./table.js"></script>
+    <script>
+        let table = new Table();
+        table.load();
+    </script>
+    </body>
+</html>
